@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(224, 192, 13));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.about-info {
+    max-width: 400px;
+    text-align: left;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.about-carousel {
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+    width: max-content;
+}
+
+.carousel img {
+    width: 400px;
+    height: 300px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Misma animación sincronizada para todos */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1300px);
+    }
+
+    /* Ajusta esto si usas más o menos imágenes */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .carousel {
+        animation-duration: 25s;
+    }
+}

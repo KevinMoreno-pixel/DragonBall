@@ -1,0 +1,69 @@
+/* Fondo y body */
+body {
+    margin: 0;
+    padding: 0;
+    background: url("https://pm1.aminoapps.com/6553/afe6ce6ca4c694027f106d22fa01228def87077b_hq.jpg") no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+/* Animaciones para las cards */
+.card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .navbar ul {
+        gap: 15px;
+        font-size: 1rem;
+    }
+
+    button,
+    .item {
+        font-size: 1rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+}
