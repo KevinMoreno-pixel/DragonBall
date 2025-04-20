@@ -1,4 +1,6 @@
 .navbar {
+    display: flex;
+    justify-content: space-between;
     top: 0;
     left: 0;
     right: 0;
@@ -7,31 +9,33 @@
     background-color: rgb(31, 31, 31);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow-x: auto;
+
 }
 
 .navbar ul {
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 20px;
+    width: 100%;
+
+    gap: 50px;
     font-size: 1.2rem;
     color: white;
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
-    /* Oculta scrollbar en Firefox */
 }
+
 
 .navbar ul::-webkit-scrollbar {
     display: none;
     /* Oculta scrollbar en Chrome, Safari */
 }
 
-.item,
-.navbar button {
+button {
     background-color: transparent;
     border: none;
     color: white;
@@ -45,4 +49,10 @@
 
 button:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        display: none;
+    }
 }
