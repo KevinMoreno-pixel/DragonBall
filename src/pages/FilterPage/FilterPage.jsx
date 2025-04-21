@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Cards from '../../Components/Cards/Card';
-import Typography from '@mui/material/Typography';
 
 const RaceFilterPage = () => {
     const { race, gender } = useParams();

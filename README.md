@@ -35,7 +35,7 @@ El diseño es dinámico y responsive, inspirado en la temática de la serie.
 
 Muestra los nombres de los desarrolladores, la universidad y el año de desarrollo.
 
-###📜 Página de descripción de personajes:
+### 📜 Página de descripción de personajes:
 
 Al hacer clic en la imagen de un personaje se abre una vista con más detalles:
 
@@ -48,7 +48,7 @@ Al hacer clic en la imagen de un personaje se abre una vista con más detalles:
 - ✅ Descripción  
 - ✅ Transformaciones (si tiene), con imagen y nombre  
 
-###❌ Página de Error:
+### ❌ Página de Error:
 
 Si se accede a una ruta no válida, se mostrará una página de error con un mensaje en rojo indicando lo ocurrido.
 
