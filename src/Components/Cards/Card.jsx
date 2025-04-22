@@ -27,8 +27,8 @@ const Cards = ({ user }) => {
 
                 <Box
                     sx={{
-                        position: 'absolute',
-                        top: '-280px',
+                        position: 'relative',
+                        top: '-25px',
                         width: '100%',
                         height: '250px',
                         transition: 'transform 0.4s ease-in-out',
@@ -41,6 +41,7 @@ const Cards = ({ user }) => {
                         component="img"
                         image={user.image}
                         sx={{
+                            position: 'absolute',
                             width: '100%',
                             height: '120%',
                             objectFit: 'contain',
@@ -57,6 +58,7 @@ const Cards = ({ user }) => {
                     }}>
                     <Typography gutterBottom variant="h5"
                         sx={{
+                            position: 'relative',
                             fontWeight: 'bold',
                             color: 'white',
                             '&:hover': {
