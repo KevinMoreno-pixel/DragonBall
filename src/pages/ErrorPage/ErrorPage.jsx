@@ -5,9 +5,11 @@ import AlertTitle from '@mui/material/AlertTitle';
 
 const ErrorPage = () => {
     return (
-        <Stack sx={{ backgroundColor:'InactiveCaption',justifyContent: 'start', height: '100vh', alignItems: 'center', overflow:'hidden', }} spacing={2}>
-            <Alert sx={{width:'100%',}} variant='filled' severity="error"><AlertTitle>Error</AlertTitle>
+        <Stack sx={{ justifyContent: 'start', height: '100vh', alignItems: 'center', overflow:'hidden',padding:4, }} spacing={2}>
+            <img src="./public/loading.gif" alt=""/>
+            <Alert sx={{width:'50',}} variant='filled' severity="error"><AlertTitle>Error 404</AlertTitle>
                 Hay un inconveniente en la ruta</Alert>
+            
         </Stack>
 
 
